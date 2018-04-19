@@ -84,51 +84,52 @@ int main()
 		cin>>choice1;
 		switch(choice1)
 		{
-			case 1:while(choice2!=4)
+			case 1:while(choice2!=14)
 			{
-				cout<<"1.Push int \n";
-				cout<<"2.Pop int stack \n";
-				cout<<"3.Display Int stack \n";
-				cout<<"4.Go back \n";
+				cout<<"11.Push int \n";
+				cout<<"12.Pop int stack \n";
+				cout<<"13.Display Int stack \n";
+				cout<<"14.Go back \n";
 				cout<<"Enter your choice \n";
 				cin>>choice2;
 				switch(choice2)
 				{
-					case 1:s1.push();
+					case 11:s1.push();
 					break;
-					case 2:s1.pop();
+					case 12:s1.pop();
 					break;
-					case 3:s1.display();
+					case 13:s1.display();
 					break;
-					case 4:
+					case 14:
 					break;
 				}
 
 			}
 			break;
-			case 2:while(choice2!=4)
+			case 2:while(choice2!=24)
 			{
-				cout<<"1.Push float stack \n";
-				cout<<"2.Pop float stack \n";
-				cout<<"3.Display float stack \n";
-				cout<<"4.Go back \n";
+				cout<<"21.Push float stack \n";
+				cout<<"22.Pop float stack \n";
+				cout<<"23.Display float stack \n";
+				cout<<"24.Go back \n";
 				cout<<"Enter your choice \n";
 				cin>>choice2;
 				switch(choice2)
 				{
-					case 1:s2.push();
+					case 21:s2.push();
 					break;
-					case 2:s2.pop();
+					case 22:s2.pop();
 					break;
-					case 3:s2.display();
+					case 23:s2.display();
 					break;
-					case 4:
+					case 24:
 					break;
 				}
 
 			}
 			break;
-			case 3:break;
+			case 3:
+			break;
 		}
 	}
 }
