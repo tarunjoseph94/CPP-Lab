@@ -41,7 +41,7 @@ public:
 	{
 		per=0.5;
 	}
-	// void add()
+	// void add() Commented for a test
 	// {
 	// 	Employee::add();
 	// }
