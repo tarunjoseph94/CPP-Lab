@@ -11,11 +11,19 @@ public:
 		cout<<"Enter your name"<<endl;
 		cin>>name;
 	}
-	 void display()
+	virtual void display()
 	{
 		cout<<"The name is "<<name<<endl;
 		
 	}
+	//  void display()
+	// {
+	// 	cout<<"The name is "<<name<<endl;
+		
+	// }
+	// virtual void display()=0;
+	
+	
 };
 class Eng: public Student
 {
@@ -30,19 +38,7 @@ public:
 		
 	}
 };
-class Medical:public Student
-{
-protected:
-	char stream[20]={'M','E','D'};
-public:
 
-
-	void display()
-	{
-		cout<<"The stream is "<<stream<<endl;
-		
-	}
-};
 int main()
 {
 	Student* ptr;
