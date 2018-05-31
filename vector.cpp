@@ -3,12 +3,12 @@
 using namespace std;
 int main()
 {
-	vector<char> v(10);
+	vector<char> v;
 	unsigned int i;
 	cout<<"Size = "<<v.size()<<endl;
 	for ( i = 0; i < 10; i++)
 	{
-		v[i]=i+'a';
+		v.push_back(i+10+'a');
 	}
 	cout<<"Current Contents : \n";
 	for(i=0;i<v.size();i++)
@@ -32,6 +32,10 @@ int main()
 	{
 		v[i]=toupper(v[i]);
 	}
+	
+	cout<<"Erase few elements \n";
+	v.erase(v.begin(),v.end()-5);
+	
 	cout<<"Modified Contents\n";
 	for( i = 0 ; i < v.size() ; i++ )
 	{
